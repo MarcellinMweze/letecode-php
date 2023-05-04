@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "Montserrat";
+    color: black;
+    list-style-type: none;
+    height: 100vh;
+}
+
+.contener{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.sectmembres{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 50px 0px;
+    
+}
+
+.mar-t-10{
+    margin-bottom: 10px;
+}
+
+.mar-t-20{
+    margin-bottom: 20px;
+    
+}
+
+.mar-t-40{
+    margin-bottom: 40px;
+}
+
+.btn-ptmenu{
+    display: none;
+    padding:5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn{
+    border-radius: 8px;
+    background-color: #D72385;
+    padding: 8px 15px;
+    color: #ffff;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.btn2{
+    
+    border-radius: 8px;
+    background-color: #D72385;
+    border: #D72385;
+    color: #ffff;
+    font-weight: bold;
+    width:70% ;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.btn.link{
+    text-decoration: none;
+    box-shadow:2px 2px 5px black;
+    transition: .6s ease;
+}
+
+.btn.link:hover{
+    color: white;
+    border:2px solid #0f2243;
+    background-color: #eee;
+    color: black;
+    box-shadow: none;
+
+}
+
+.al-center{
+    text-align: center;
+}
+
+.navigation{
+    background-color: #0f2243;
+    padding: 8px 0;
+
+}
+
+.navigation .contener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navigation span{
+    font-weight: bolder;
+}
+
+.navigation img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.navigation .menu{
+    display: flex;
+    
+}
+
+.navigation .menu-item{
+    display: inline;
+    padding: 0 8px;
+}
+
+.navigation .menu-item.active{
+    font-weight: bold;
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 5px;
+}
+
+.section.header{
+    text-align: center;
+}
+
+.section.learn{
+    background-color: #eee;
+}
+
+.section.learn .contener{
+    display: flex;
+    align-items: center;
+}
+
+.section.learn img{
+    width: 350px;
+}
+
+.section.learn .bloc-item{
+    width: 50%;
+}
+
+footer{
+   background-color: #0f2243; 
+   padding: 50px 0;
+   color: #fff;
+}
+
+/* Page communauté */
+
+.section.membres .contener-membres{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 40px;   
+}
+
+.section.membres .contener h2{
+    margin-bottom: 50px;
+}
+
+.contener .img-membre img{
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contener .contener-membres .membres{
+    text-align: center;
+}
+
+.membres h3{
+    
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.sectmembres{
+    max-width: 1000px;
+    margin: 0px 20px 20px 20px;
+    
+}
+
+.contener .grid-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+    
+}
+
+.grid-box .grid-item img{
+    text-align: center;
+}
+
+
+
+.grid-box .grid-item .img-logo{
+    width: 280px;
+    height: 300px;
+    border: 1px solid #0f2243; 
+}
+
+.contener .boitelettre{
+    display: flex;
+    padding:5px;
+    font-size: 25px;
+}
+
+.boite-item{
+    width: 50%;
+}
+
+.boite-item.al-center{
+    display: inline;
+    text-align: right;
+}
+
+.boite-item.al-center .txtemail{
+    margin: 0 0 10px 0;
+    width: 70%;
+    padding: 12px 0px 12px 15px ;
+    border-radius: 8px;
+    border: #D8D8D8;
+    background-color:#D8D8D8 ;
+}
+
+.section.boite{
+    background-color: #eee;
+}
+
+.section.boite h2{
+    font-size:24px;
+}
+
+.section.boite p{
+    font-size:16px;
+}
+
+.contener .contenerMessage{
+    width: 35%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color:rgb(255, 0, 0);
+    color: #eee;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    animation: anime 0.6s ease-out;
+}
+
+/* Animation */
+
+@keyframes anime {
+    from{
+        transform: translateY(-50px);
+    }
+}
+
+.contener .champs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    gap: 20px;
+}
+
+.champs .champtext{
+    margin-top: 5px; 
+    width: 100%;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #D8D8D8;
+    border: #D8D8D8;
+    
+}
+
+.textarea{
+    background-color: #D8D8D8;
+    border: #D8D8D8;
+    resize: none;
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px 0px 20px 0;
+}
+
+.btn3{
+    border-radius: 8px;
+    background-color: #D72385;
+    border: #D72385;
+    color: #ffff;
+    font-weight: bold;
+    width:45% ;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width:767px) {
+   
+    .section.learn .contener{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section.learn .bloc-item{
+        width: 100%; 
+    }
+
+    .section.learn .bloc-item.al-center{
+        text-align: left;
+    }
+
+    .section.learn .bloc-item.al-center img{
+        width: 150px;
+        padding-bottom: 20px;
+    }
+
+    .contener{
+        padding:0px 20px;
+    }
+
+    .btn-ptmenu{
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .navigation .menu{
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        background-color: #eeeeee92;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        margin-left: -100%;
+        transition: all .5s ease;
+        
+    }
+
+    .navigation .menu.nommenu{
+        margin-left: 0px;
+    }    
+
+    .navigation .menu-item.active{
+        border-bottom: 2px solid black;
+    }
+
+    .navigation .menu-item a {
+        color:black;
+    }
+
+    .navigation .menu-item {
+        padding: 25px 0;
+    }
+
+    .contener .boitelettre{
+        display: block;
+    }
+
+    .boite-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .boite-item.al-center{
+        text-align: start;
+    }
+
+    .boite-item.al-center .txtemail{
+        width: 100%;
+    }
+
+    .btn2{
+        width:100% ;
+    }
+    
+}
+
+
+
+
+
